@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calsi - Graphing Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/graph_fav.png" type="image/x-icon">
+</head>
+<body >
+
+    <nav>
+        <ul class="navLeft">
+            <li><a href="./Img/operations.png"><img src="" alt="Logo"></a></li>
+        </ul>
+        <ul class="navRight">
+            <li> About Us </li>
+            <li> Contact Us </li>
+            <li> Features </li>
+            <li> Service </li>
+        </ul>
+    </nav>
+
+    <section id="graphicCalculator" class="">
+
+        <div class="inputSection">
+            <h2>Graph Your Equations :- </h2>
+            <form id="calculatorForm">
+                <div class="inputs">
+                    <label for="equations">Enter Equations (comma-separated):</label>
+                    <input type="text" class="" id="equations" placeholder="e.g., y = x^2, y = sin(x)" required>
+                    <small class=""> { Supported Functions: sin, cos, tan, sqrt, log, exp, pi, e, and more }</small>
+                </div>
+                <div class="inputs">
+                    <label for="minX">Min X:</label>
+                    <input type="number" class="" id="minX" value="-10">
+                </div>
+                <div class="inputs">
+                    <label for="maxX">Max X:</label>
+                    <input type="number" class="" id="maxX" value="10">
+                </div>
+                <div class="inputs">
+                    <label for="graphType"> Graph Type: </label> <br>
+                    <div class="options">
+                        <input type="radio" id="scatter" name="graphType" value="scatter">
+                        <label for="scatter"> Scatter Plot </label>
+                        <input type="radio" id="line" name="graphType" value="line">
+                        <label for="line"> Line Chart </label>
+                        <input type="radio" id="bar" name="graphType" value="bar">
+                        <label for="bar"> Bar Chart </label>
+                        <input type="radio" id="pie" name="graphType" value="pie">
+                        <label for="pie"> Pie Chart </label>
+                    </div>
+                </div>
+                <button type="submit" id="submit">Graph</button>
+                <div class="reset-container">
+                    <button type="reset" class="">Reset Equation</button>
+                    <button type="button" class="" id="resetBtn">Reset Graph</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="graphBox">
+            <h2> Your Graph</h2>
+            <canvas id="graph" height="400px"></canvas>
+        </div>
+
+    </section>
+
+    <footer>
+        <h4>Copyright © 2023 - 2033 Calsi® | All rights reserved </h4>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="calculator.js"></script>
+    
+</body>
+</html>

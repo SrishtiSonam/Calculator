@@ -1,0 +1,99 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+    /* background-color: rgb(199, 192, 162);            -       1   -   cream  */
+    /* background-color: rgb(85, 39, 5);                -       2   -   brown  */
+    /* background-color: rgb(31, 28, 18);               -       3   -   black  */
+}
+
+nav, footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(31, 28, 18,0.9);
+    color: rgb(199, 192, 162);
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+footer h4 {
+    margin-top: 1rem;
+}
+
+.navRight {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.navRight li {
+    width: 7rem;
+    padding: 1rem;
+}
+
+section {
+    background-color: rgb(85, 39, 5,0.9);
+}
+
+#CalciOptions {
+    background-image: url("./Img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content:center
+}
+
+h1 {
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: double 0.7rem;
+    width:max-content;
+}
+h5 {
+    margin-top: 10rem;
+    text-justify: auto;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.options {
+    list-style:decimal;
+}
+
+.options li {
+    padding: 0.5rem;
+    margin: 2.5rem 1.5rem;
+    width: 20vw;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.options a{
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 0.7rem;
+    text-decoration:none;
+    color: rgb(31, 28, 18, 0.9);
+    background-color: rgb(85, 39, 5,0.1);
+    border: solid 2px rgb(85, 39, 5,0.5);
+    border-radius: 5rem;
+}
+
+.sections {
+    color: rgb(31, 28, 18, 0.9);
+    margin: 20vh 1rem;
+    width: 15vw;
+}

@@ -1,0 +1,132 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, rgb(199, 192, 162), rgb(85, 39, 5));
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+nav, footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: rgb(31, 28, 18,0.9);
+  color: rgb(199, 192, 162);
+}
+
+nav {
+  display:flex;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer h4 {
+  margin-top: 1rem;
+}
+
+.navRight {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.navRight li {
+  width: 7rem;
+  padding: 1rem;
+}
+
+.inputSection {
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(240, 248, 255, 0.5);
+  color: rgb(31, 28, 18, 0.9);
+}
+
+.inputSection h2 {
+  font-size: 3rem;
+  margin:1.5rem 0;
+  padding-bottom: 0.5rem;
+  width:max-content;
+}
+
+.inputs {
+  margin: 1rem 1rem;
+  font-size: 1.2rem;
+}
+.inputs input {
+  margin: 0.5rem 1rem;
+}
+
+button {
+    border-radius: 4rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0 5rem;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+button:hover {
+    background-color: rgba(31, 28, 18, 0.05);
+    color: white;
+    box-shadow: 2px 2px 1px rgba(31, 28, 18, 0.2); 
+    transform: scale(1.1);
+}
+
+.options label{
+  margin-right: 10vw;
+}
+
+#graphType {
+  font-size: 1rem;
+}
+
+#submit {
+  margin-left: 45vw;
+}
+
+.graphBox {
+  margin:2rem;
+  padding: 2rem;
+  height: 550px;
+  background-color: rgba(240, 248, 255, 0.5);
+  border: solid 1px white;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.graphBox h2 {
+  font-weight: 700;
+  text-decoration:underline;
+}
+
+#graph {
+    width: 100%;
+    height: 400px;
+    margin: 2rem;
+}
+#graph:hover {
+    box-shadow: 0 0 11px rgba(31, 28, 18, 0.2); 
+}
+
+#calculator {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(31, 28, 18, 0.1);
+}
+
+.reset-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
